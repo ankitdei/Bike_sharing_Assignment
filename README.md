@@ -29,16 +29,24 @@ Model Evaluation:
 When you're done with model building and residual analysis and have made predictions on the test set, just make sure you use the following two lines of code to calculate the R-squared score on the test set.
 from sklearn.metrics import r2_score
 r2_score(y_test, y_pred)
-where y_test is the test data set for the target variable, and y_pred is the variable containing the predicted values of the target variable on the test set.
+where y_test is the test data set for the target variable and y_pred is the variable containing the predicted values of the target variable on the test set.
 Please don't forget to perform this step as the R-squared score on the test set holds some marks. The variable names inside the 'r2_score' function can be different based on the variable names you have chosen.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+As per our final Model, the top 3 predictor variables that influence bike booking are:
+* Temperature (temp): -
+A coefficient value of ‘0.375922’ indicated that a unit increase in the temp variable increases the bike hire numbers by 0.375922 units.
+
+* Weather Situation 3:-
+(weathersit_3)(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered)
+A coefficient value of ‘-0.333164’ indicated that w.r.t Weathersit_3, a unit increase in the Weathersit_3 variable decreases the bike hire numbers by 0.333164 units.
+
+* Year (yr):-
+A coefficient value of ‘0.232965’ indicated that a unit increase in the yr variable increases the bike hire numbers by 0.232965 units.
+
+So, it's suggested to consider these variables of utmost importance while planning, to achieve maximum Booking
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
